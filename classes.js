@@ -1,4 +1,6 @@
-class BankAccount{
+//JavaScript Classes are templates for JavaScript Objects.
+//Use the keyword class to create a class.
+/* class BankAccount{
     customerName;
     acccountNumber;
     balance=0;
@@ -21,4 +23,19 @@ withdraw(amount){
 const shivaAccount=new BankAccount("Shiva",2000);
 shivaAccount.deposit(2000);
 shivaAccount.withdraw(500);
-console.log(shivaAccount);
+console.log(shivaAccount); */
+class Car {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
+  
+    }
+    age() {
+      const date = new Date();
+      return date.getFullYear() - this.year;
+    }
+  }
+  
+  const myCar = new Car("Ford", 2014);
+  document.getElementById("demo").innerHTML =
+  "My car is " + myCar.age() + " years old.";
